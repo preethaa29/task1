@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>To-Do List Web App</title>
+</head>
+<body>
+    <div class="container">
+        <h1>To-Do List App</h1>
+        <div id="task-container">
+            <input type="text" id="task-name" placeholder="Task Name">
+            <input type="text" id="due-date" placeholder="Due Date (Optional)">
+            <select id="priority">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
